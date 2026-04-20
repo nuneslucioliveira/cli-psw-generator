@@ -1,12 +1,13 @@
 ---
 id: REQ-001
 title: "CLI Basic Password Generation"
-status: accepted
+status: implemented
 domain: CLI Arguments & Core Generator
 milestone: v1.0
 priority: must
 author:
   - "Agent: curupira-companion"
+  - "nuneslucioliveira"
 ---
 
 # REQ-001 — CLI Basic Password Generation
