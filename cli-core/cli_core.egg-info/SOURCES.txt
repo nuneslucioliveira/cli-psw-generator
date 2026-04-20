@@ -1,0 +1,9 @@
+setup.py
+cli_core/__init__.py
+cli_core/cli.py
+cli_core/password_generator.py
+cli_core.egg-info/PKG-INFO
+cli_core.egg-info/SOURCES.txt
+cli_core.egg-info/dependency_links.txt
+cli_core.egg-info/entry_points.txt
+cli_core.egg-info/top_level.txt
