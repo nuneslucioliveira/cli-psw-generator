@@ -1,13 +1,14 @@
 ---
 id: ADR-001
 title: Use Python standard library for cryptographic password generation
-status: proposed
+status: accepted
 service: platform
 milestone: v1.0
 date: 2026-04-20
 deciders:
   - "Agent: curupira-companion"
   - "@nuneslucioliveira"
+  - "nuneslucioliveira"
 ---
 
 # ADR-001: Use Python standard library for cryptographic password generation
