@@ -1,4 +1,5 @@
 """Pytest fixtures for CLI password generator tests."""
+
 import pytest
 import subprocess
 import sys
@@ -8,14 +9,16 @@ from pathlib import Path
 @pytest.fixture
 def cli_runner():
     """Fixture to run CLI commands."""
+
     def run_command(args):
         # Use the installed CLI directly
         result = subprocess.run(
             [sys.executable, "-m", "cli_core.cli", *args],
             capture_output=True,
-            text=True
+            text=True,
         )
         return result
+
     return run_command
 
 

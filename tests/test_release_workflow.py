@@ -9,18 +9,21 @@ def test_build_succeeds_from_correct_directory():
     """Test that build succeeds from cli-core directory"""
     # Change to cli-core directory where setup.py is located
     original_dir = os.getcwd()
-    
+
     try:
         os.chdir("cli-core")
-        
+
         # Run build command
-        result = subprocess.run([
-            sys.executable, "-m", "build"
-        ], capture_output=True, text=True, cwd="cli-core")
-        
+        result = subprocess.run(
+            [sys.executable, "-m", "build"],
+            capture_output=True,
+            text=True,
+            cwd="cli-core",
+        )
+
         # Check if build was successful
         assert result.returncode == 0, f"Build failed: {result.stderr}"
-        
+
     finally:
         os.chdir(original_dir)
 
